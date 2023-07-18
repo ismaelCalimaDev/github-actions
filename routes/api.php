@@ -22,3 +22,9 @@ Route::get('/foo', function () {
         'foo' => 'bar'
     ]);
 });
+
+Route::get('/bar', function () {
+    return response()->json([
+        'bar' => 'foo'
+    ]);
+});
